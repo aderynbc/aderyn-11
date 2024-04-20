@@ -15,15 +15,21 @@
   <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 </head>
 
-<body>
+<body
+  class="home page-template-default page page-id-2 custom-header header-image full-width-content enterprise-pro-teal enterprise-pro-home"
+  itemscope itemtype="https://schema.org/WebPage">
 
-  {% include "./partials/navbar.html" %}
+  <div class="site-container">
+    {% include "./partials/header.html" %}
 
-  {{ content | safe }}
+    {% include "./partials/nav.html" %}
 
-  {% include "./partials/footer.html" %}
+    {{ content | safe }}
 
-  <script src="/static/js/alpine.js"></script>
+    {% include "./partials/footer.html" %}
+
+  </div>
+
 
   {% if path == "home" %}
   <!-- Netlify Identity Widget -->
