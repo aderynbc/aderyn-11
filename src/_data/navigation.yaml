@@ -1,10 +1,9 @@
----
 items:
-  - text: Menu One
+  - text: Home
     url: "#"
-  - text: Menu Two
+  - text: About Us
     url: "#"
-  - text: Menu Three
+  - text: Building Surveys
     url: "#"
-  - text: Blog
-    url: "/blog"
+  - text: Party Wall Matters
+    url: /blog
